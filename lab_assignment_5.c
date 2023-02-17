@@ -9,6 +9,15 @@ typedef struct node {
 // Returns number of nodes in the linkedList.
 int length(node* head)
 {
+   struct node *tmp = head;
+    int len = 0;
+   while (tmp != NULL)
+   {
+      tmp = tmp->next;
+      len++;
+   }
+
+   return (len);
 }
 
 // parses the string in the linkedList
